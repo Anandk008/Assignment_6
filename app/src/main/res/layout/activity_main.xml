@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_id"
+        android:hint=" ID "
+        app:helperText="Required*"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#FF0000"
+        app:startIconDrawable="@drawable/id"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_id_txt"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_username"
+        android:hint=" Username "
+        app:helperText="Required*"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#FF0000"
+        app:startIconDrawable="@drawable/person2"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_username_txt"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_pass"
+        android:hint=" Password"
+        app:helperText="Required*"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:helperTextTextColor="#FF0000"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/lock"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_pass_txt"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="35dp"
+    android:layout_marginBottom="35dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Save "
+        android:id="@+id/save"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text=" Update "
+        android:id="@+id/updt"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" View "
+        android:id="@+id/view"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text=" Delete "
+        android:id="@+id/dlt"
+        />
+    </LinearLayout>
+
+</LinearLayout>
